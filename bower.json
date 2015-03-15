@@ -1,0 +1,21 @@
+{
+  "name": "ko-grid-resize-detection",
+  "main": "dist/ko-grid-resize-detection.js",
+  "description": "A ko-grid extension which tries to react to container resize events.",
+  "authors": ["Ben Schulz (https://github.com/benschulz)"],
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "ko-grid",
+    "resize"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/benschulz/ko-grid-resize-detection.git"
+  },
+  "dependencies": {
+    "ko-grid": "benschulz/ko-grid"
+  },
+  "devDependencies": {
+    "onefold-dom": "benschulz/onefold-dom"
+  }
+}
