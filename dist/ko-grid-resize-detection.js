@@ -1,0 +1,7 @@
+/*
+ Copyright (c) 2015, Ben Schulz
+ License: BSD 3-clause (http://opensource.org/licenses/BSD-3-Clause)
+*/
+function h(l){return function(c){return c}(function(c,e,d){var a=window.requestAnimationFrame.bind(window);d.defineExtension("ko-grid-resize-detection",{u:function(b,c,d){function f(){g||(g=a(function(){g=null;d.layout.recalculate()}))}var g,k=(b=window.$)?b(e.element.i(d.rootElement,".ui-resizable")):{on:function(){},off:function(){}};window.addEventListener("resize",f);k.on("resize resizestop",f);this.dispose=function(){window.removeEventListener("resize",f);k.off("resize resizestop",f)}}});return d.declareExtensionAlias("resizeDetection",
+"ko-grid-resize-detection")}({},function(){return function(c){return c}(function(){function c(a,b){return!!(a.compareDocumentPosition(b)&16)}var e=window.Element,d=e.prototype.webkitMatchesSelector||e.prototype.mozMatchesSelector||e.prototype.msMatchesSelector||e.prototype.matches;return{n:function(a,b){for(var c=0;b;){if(b===a)return c;b=b.parentNode;++c}throw Error("The given node is not part of the subtree.");},p:function(a,b){return a===b||c(a,b)},r:c,element:{i:function(a,b){do{if(d.call(a,b))return a;
+a=a.parentElement}while(a);return null},matches:function(a,b){return d.call(a,b)}}}}())}(),l))}"function"===typeof define&&define.amd?define(["ko-grid","ko-data-source","ko-indexed-repeat","knockout"],h):window["ko-grid-resize-detection"]=h(window.ko.bindingHandlers.grid);
